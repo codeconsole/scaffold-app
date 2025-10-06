@@ -82,6 +82,10 @@ tasks.withType(Test).configureEach {
     useJUnitPlatform()
 }
 
+grails {
+    importJavaTime = true
+}
+println "grails.importJavaTime: ${grails.importJavaTime}"
 
 assets {
     excludes = [
